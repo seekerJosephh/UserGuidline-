@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Guidline</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+
+    <nav class="navbar navbar-dark fixed-top" style="background-color: rgba(113, 44, 249, 1);">
+      <div class="container-fluid">
+        <a style="margin-left: 3rem;" class="navbar-brand" href="#">User Guidline</a>
+
+        <button  class="btn btn-violet m-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#emailGuideOffcanvas" aria-controls="emailGuideOffcanvas">
+          <span style="font-size: 20px;" class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="offcanvas offcanvas-end" style="background-color: rgba(113, 44, 249, 1);" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 style="color: aliceblue; " class="offcanvas-title" id="offcanvasDarkNavbarLabel">Guidline Menu</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Mozilla Thunderbird</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Microsoft OutLook</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Google Mail</a>
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+<!-- Offcanvas Menu -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="emailGuideOffcanvas" aria-labelledby="offcanvasLabel">
+  <div class="offcanvas-header">
+      <h1 class="offcanvas-title" id="offcanvasLabel">How to use</h1>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+              <a class="nav-link active" href="#" data-section="mozilla">Mozilla Thunderbird</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#" data-section="outlook">Microsoft Outlook</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#" data-section="gmail">Google Mail</a>
+          </li>
+      </ul>
+      <form class="d-flex mt-3" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-success" type="submit">Search</button>
+      </form>
+  </div>
+</div>
+
+<!-- Main Content Area -->
+<div class="container" id="content-area" style="margin-top: 5rem;"></div>
+
+
+
+  <footer></footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
