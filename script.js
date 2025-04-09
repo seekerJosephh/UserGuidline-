@@ -172,7 +172,7 @@ const sections = {
             <p><strong>Searching Emails:</strong></p>
             <p>Use the search bar to find emails by keywords, sender, etc. Thunderbird searches your downloaded emails.</p>
             <div class="image-placeholder">
-                <img src="assets/mozilla/thunderbird_searchs.png" alt="Screenshot of Thunderbird Search">
+                <img src="assets/mozilla/thunderbird_search.png" alt="Screenshot of Thunderbird Search">
                 <p class="caption">Image of Thunderbird search.</p>
             </div>
             <p><strong>Address Book:</strong></p>
