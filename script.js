@@ -97,75 +97,116 @@ document.addEventListener('DOMContentLoaded', function() {
 // Content for each section stored as JavaScript objects
 const sections = {
     mozilla: `
-        <section>
-            <main class="container">
-                <section id="introduction" class="guide-section">
-                    <h2>Welcome to the Thunderbird Installation Guide</h2>
-                    <p>This guide will walk you through the steps to install Mozilla Thunderbird and connect it with your email address: <span class="email">demo@your-name.com</span>.</p>
-                    <p>Follow each step carefully to ensure a successful installation.</p>
-                </section>
-                <section id="download" class="guide-section step">
-                    <h3>Step 1: Download Thunderbird</h3>
-                    <p>Visit the official Mozilla Thunderbird download page.</p>
-                    <div class="image-placeholder">
-                        <img src="assets/mozilla/placeholder_download.png" alt="Screenshot of Thunderbird Download Page">
-                        <p class="caption">Image of the Mozilla Thunderbird download page.</p>
-                    </div>
-                    <p>Click on the appropriate download button for your operating system (Windows, macOS, or Linux).</p>
-                </section>
-                <section id="install" class="guide-section step">
-                    <h3>Step 2: Run the Installer</h3>
-                    <p>Once the download is complete, locate the installer file (e.g., Thunderbird Setup.exe on Windows, Thunderbird owner on macOS).</p>
-                    <div class="image-placeholder">
-                        <img src="assets/mozilla/install.png" alt="Screenshot of Thunderbird Installer">
-                        <p class="caption">Image showing the Thunderbird installer file.</p>
-                    </div>
-                    <p>Double-click the installer file to begin the installation process. Follow the on-screen instructions.</p>
-                </section>
-                <section id="account-setup" class="guide-section step">
-                    <h3>Step 3: Configure Your Email Account</h3>
-                    <p>After the installation is finished, open Mozilla Thunderbird.</p>
-                    <div class="image-placeholder">
-                        <img src="assets/mozilla/welcom.png" alt="Screenshot of Thunderbird Welcome Screen">
-                        <p class="caption">Image of the initial Thunderbird welcome screen.</p>
-                    </div>
-                    <p>You will likely be prompted to set up your email account. If not, go to File > New > Mail Account.</p>
-                    <p>Enter your name and the email address: <span class="email">demo@your-name.com</span>.</p>
-                    <div class="image-placeholder">
-                        <img src="assets/mozilla/CofigEmail.png" alt="Screenshot of Email Account Setup">
-                        <p class="caption">Image showing the email account details input form.</p>
-                    </div>
-                    <p>Click "Continue". Thunderbird will attempt to automatically configure your server settings.</p>
-                    <p>If prompted for server details (Incoming and Outgoing), you may need to consult your email provider's documentation. Common settings are:</p>
-                    <ul>
-                        <li>Incoming Server (IMAP): imap.your-email-provider.com (Port 993, SSL)</li>
-                        <li>Outgoing Server (SMTP): smtp.your-email-provider.com (Port 465, SSL)</li>
-                    </ul>
-                    <div class="image-placeholder">
-                        <img src="assets/mozilla/configuration.png" alt="Screenshot of Server Settings">
-                        <p class="caption">Image showing the manual server settings configuration.</p>
-                    </div>
-                    <p>Enter your email password when prompted and click "Done".</p>
-                </section>
-                <section id="finish" class="guide-section">
-                    <h2>Installation Complete!</h2>
-                    <p>Congratulations! You have successfully installed Mozilla Thunderbird and connected it with the email address: <span class="email">demo@your-name.com</span>.</p>
-                    <div class="image-placeholder">
-                        <img src="assets/mozilla/done.png" alt="Screenshot of Server Settings">
-                        <p class="caption">Image showing the manual server settings configuration.</p>
-                    </div>
-                    <div class="success-message">
-                    <div class="checkmark-container">
-                        <svg class="checkmark" viewBox="0 0 52 52">
-                            <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
-                            <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
-                        </svg>
-                    </div>
-                    <p>Mozilla Thunderbird guidelines setup complete!</p>
-                </div>
-                </section>
-            </main>
+    <section>
+    <main class="container">
+        <section id="introduction" class="guide-section">
+            <h2>Welcome to the Google Mail (Gmail) in Thunderbird Guide</h2>
+            <p>This guide will walk you through the steps to configure and effectively use Mozilla Thunderbird with your Google Mail (Gmail) account: <span class="email">demo@gmail.com</span>.</p>
+            <p>Follow each step carefully to ensure a successful setup and seamless experience.</p>
         </section>
+        <section id="download" class="guide-section step">
+            <h3>Step 1: Download Thunderbird</h3>
+            <p>Visit the official Mozilla Thunderbird download page.</p>
+            <div class="image-placeholder">
+                <img src="assets/mozilla/placeholder_download.png" alt="Screenshot of Thunderbird Download Page">
+                <p class="caption">Image of the Mozilla Thunderbird download page.</p>
+            </div>
+            <p>Click on the appropriate download button for your operating system (Windows, macOS, or Linux).</p>
+        </section>
+        <section id="install" class="guide-section step">
+            <h3>Step 2: Run the Installer</h3>
+            <p>Once the download is complete, locate the installer file (e.g., Thunderbird Setup.exe on Windows, Thunderbird.dmg on macOS).</p>
+            <div class="image-placeholder">
+                <img src="assets/mozilla/install.png" alt="Screenshot of Thunderbird Installer">
+                <p class="caption">Image showing the Thunderbird installer file.</p>
+            </div>
+            <p>Double-click the installer file to begin the installation process. Follow the on-screen instructions.</p>
+        </section>
+        <section id="account-setup" class="guide-section step">
+            <h3>Step 3: Configure Your Gmail Account in Thunderbird</h3>
+            <p>After the installation is finished, open Mozilla Thunderbird.</p>
+            <div class="image-placeholder">
+                <img src="assets/mozilla/welcom.png" alt="Screenshot of Thunderbird Welcome Screen">
+                <p class="caption">Image of the initial Thunderbird welcome screen.</p>
+            </div>
+            <p>Go to File > New > Existing Mail Account.</p>
+            <p>Enter your name, Gmail address (e.g., <span class="email">demo@gmail.com</span>), and password.</p>
+            <div class="image-placeholder">
+                <img src="assets/mozilla/CofigEmail.png" alt="Screenshot of Email Account Setup">
+                <p class="caption">Image showing the email account details input form.</p>
+            </div>
+            <p>Click "Continue". Thunderbird will attempt to automatically configure your server settings.</p>
+            <p>If prompted for server details, or if automatic configuration fails, use these settings:</p>
+            <ul>
+                <li>Incoming Server (IMAP): imap.gmail.com (Port 993, SSL/TLS)</li>
+                <li>Outgoing Server (SMTP): smtp.gmail.com (Port 465, SSL/TLS)</li>
+            </ul>
+            <div class="image-placeholder">
+                <img src="assets/mozilla/configuration.png" alt="Screenshot of Server Settings">
+                <p class="caption">Image showing the manual server settings configuration.</p>
+            </div>
+            <p>If you use 2-Step Verification, generate an App Password from your Google Account settings and use it here instead of your regular Gmail password.</p>
+            <p>Click "Done" to finish setup.</p>
+        </section>
+        <section id="thunderbird-gmail-usage" class="guide-section step">
+            <h3>Step 4: Using Gmail in Thunderbird - Comprehensive Guide</h3>
+            <p>After setup, Thunderbird will download your Gmail emails.</p>
+            <p><strong>Composing Emails:</strong></p>
+            <p>Click "Write" to compose a new email. Enter recipients, subject, and message. Use formatting options, attach files (paperclip icon), and add signatures (Tools > Account Settings > Signature).</p>
+            <div class="image-placeholder">
+                <img src="assets/mozilla/thunderbird_compose.png" alt="Screenshot of Thunderbird Compose Window">
+                <p class="caption">Image of Thunderbird composing a new email.</p>
+            </div>
+            <p><strong>Managing Folders/Labels:</strong></p>
+            <p>Gmail labels appear as folders in Thunderbird. Create new folders (labels) by right-clicking your account and selecting "New Folder". Drag and drop emails to organize. Note: changes sync with Gmail.</p>
+            <div class="image-placeholder">
+                <img src="assets/mozilla/thunderbird_folders.png" alt="Screenshot of Thunderbird Folder Management">
+                <p class="caption">Image of Thunderbird folder/label management.</p>
+            </div>
+            <p><strong>Filtering and Sorting:</strong></p>
+            <p>Create filters (Tools > Message Filters) to automatically sort incoming emails. Define criteria (sender, subject, etc.) and actions (move, label, delete).</p>
+            <div class="image-placeholder">
+                <img src="assets/mozilla/thunderbird_filters.png" alt="Screenshot of Thunderbird Message Filters">
+                <p class="caption">Image of Thunderbird message filters.</p>
+            </div>
+            <p><strong>Searching Emails:</strong></p>
+            <p>Use the search bar to find emails by keywords, sender, etc. Thunderbird searches your downloaded emails.</p>
+            <div class="image-placeholder">
+                <img src="assets/mozilla/thunderbird_searchs.png" alt="Screenshot of Thunderbird Search">
+                <p class="caption">Image of Thunderbird search.</p>
+            </div>
+            <p><strong>Address Book:</strong></p>
+            <p>Manage contacts in the Address Book (Address Book icon). Add, edit, and import contacts. Use them when composing emails.</p>
+            <div class="image-placeholder">
+                <img src="assets/mozilla/thunderbird_addressbook.png" alt="Screenshot of Thunderbird Address Book">
+                <p class="caption">Image of Thunderbird address book.</p>
+            </div>
+            <p><strong>Gmail's "All Mail" and "Trash":</strong></p>
+            <p>Gmail's "All Mail" folder shows all your emails. The "Trash" folder contains deleted emails (permanently deleted after 30 days).</p>
+            <p><strong>Troubleshooting:</strong></p>
+            <p>For connection issues, verify server settings and App Password (if applicable). Check Gmail's web interface for account issues.</p>
+            <p><strong>Gmail Web Interface:</strong></p>
+            <p>Manage Gmail settings (filters, labels, etc.) through the Gmail web interface. Changes will reflect in Thunderbird.</p>
+        </section>
+        <section id="finish" class="guide-section">
+            <h2>Setup Complete!</h2>
+            <p>Congratulations! You have successfully configured and learned to use Google Mail (Gmail) in Mozilla Thunderbird with the email address: <span class="email">demo@gmail.com</span>.</p>
+            <div class="image-placeholder">
+                <img src="assets/mozilla/done.png" alt="Screenshot of Server Settings">
+                <p class="caption">Image showing the manual server settings configuration.</p>
+            </div>
+            <div class="success-message">
+                <div class="checkmark-container">
+                    <svg class="checkmark" viewBox="0 0 52 52">
+                        <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+                        <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                    </svg>
+                </div>
+                <p>Google Mail (Gmail) in Thunderbird is ready to use!</p>
+            </div>
+        </section>
+    </main>
+</section>
     `,
     outlook: `
         <section>
